@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "tasas",
+  "info": {
+    "singularName": "tasa",
+    "pluralName": "tasas",
+    "displayName": "Tasa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "InteresEstableMenor9": {
+      "type": "float"
+    },
+    "InteresEstableMayor9": {
+      "type": "float"
+    },
+    "InteresModeradoMenor9": {
+      "type": "float"
+    },
+    "InteresModeradoMayor9": {
+      "type": "float"
+    },
+    "InteresDisruptivoMenor9": {
+      "type": "float"
+    },
+    "InteresDisruptivoMayor9": {
+      "type": "float"
+    }
+  }
+}

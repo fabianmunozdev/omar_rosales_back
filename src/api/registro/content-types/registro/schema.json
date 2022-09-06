@@ -1,0 +1,94 @@
+{
+  "kind": "collectionType",
+  "collectionName": "registros",
+  "info": {
+    "singularName": "registro",
+    "pluralName": "registros",
+    "displayName": "Registro",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombres": {
+      "type": "string",
+      "required": true
+    },
+    "apellido_paterno": {
+      "type": "string",
+      "required": true
+    },
+    "apellido_materno": {
+      "type": "string",
+      "required": true
+    },
+    "fecha_de_nacimiento": {
+      "type": "date",
+      "required": true
+    },
+    "curp": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "rfc": {
+      "type": "string"
+    },
+    "correo": {
+      "type": "email"
+    },
+    "telefonos": {
+      "type": "string"
+    },
+    "ine_1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "ine_2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "foto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "contrato": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "files",
+        "images"
+      ]
+    },
+    "tipo_inversion": {
+      "type": "string"
+    },
+    "plazo_inversion": {
+      "type": "string"
+    },
+    "valor_inversion": {
+      "type": "string"
+    },
+    "numero_transaccion": {
+      "type": "string"
+    },
+    "estado_transaccion": {
+      "type": "string"
+    }
+  }
+}

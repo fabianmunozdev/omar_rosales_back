@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "legales",
+  "info": {
+    "singularName": "legal",
+    "pluralName": "legales",
+    "displayName": "Legal"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "terminosyCondiciones": {
+      "type": "richtext"
+    }
+  }
+}
