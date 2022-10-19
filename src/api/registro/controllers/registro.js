@@ -68,8 +68,9 @@ module.exports = createCoreController('api::registro.registro', ({strapi})=>({
 	//const {params, request} = ctx;
 	const serverurl = strapi.config.get('server.urltomedia');
 	mercadopago.configure({
-  		access_token:
-    		"TEST-322877679534842-080315-10f085fe9cdbd218f78f6cf2e39c4ea6-1171890125",
+		access_token: "APP_USR-322877679534842-080315-7d47dc226631a12353b3954ed211771b-1171890125",
+  		//access_token:
+    		//"TEST-322877679534842-080315-10f085fe9cdbd218f78f6cf2e39c4ea6-1171890125",
 	});
 	console.log(ctx.request.body.data.price);
 	try {
@@ -111,9 +112,12 @@ module.exports = createCoreController('api::registro.registro', ({strapi})=>({
           		sandbox: response.body.sandbox_init_point,
         		});*/
 			try{
-				res = {id: response.body.id,
-                        	sandbox: response.body.sandbox_init_point,}
-                        	//console.log(response)
+				res = {
+				id: response.body.id,
+                        	sandbox: response.body.sandbox_init_point,
+				init_point: response.body.init_point
+				}
+                        	console.log(res)
 				return res 
 			}catch(e){
 				console.log(e)
